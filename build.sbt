@@ -1,4 +1,4 @@
-import scala.collection.JavaConverters._
+import scala.jdk.CollectionConverters._
 import java.lang.management.ManagementFactory
 
 lazy val scala212 = "2.12.21"
@@ -47,12 +47,12 @@ pomIncludeRepository := { _ => false }
 
 Test / publishArtifact := false
 
-ThisBuild / homepage := Some(url("https://github.com/sbt/sbt-slick-codegen"))
+ThisBuild / homepage := Some(uri("https://github.com/sbt/sbt-slick-codegen"))
 ThisBuild / description := "Generate Slick table mappings from an sbt build"
-ThisBuild / licenses := Seq("Apache-2.0" -> url("https://www.apache.org/licenses/LICENSE-2.0.html"))
+ThisBuild / licenses := Seq("Apache-2.0" -> uri("https://www.apache.org/licenses/LICENSE-2.0.html"))
 ThisBuild / scmInfo := Some(
   ScmInfo(
-    url("https://github.com/sbt/sbt-slick-codegen"),
+    uri("https://github.com/sbt/sbt-slick-codegen"),
     "scm:git:git@github.com:sbt/sbt-slick-codegen.git"
   )
 )
@@ -61,7 +61,7 @@ ThisBuild / developers := List(
     id = "tototoshi",
     name = "Toshiyuki Takahashi",
     email = "",
-    url = url("https://tototoshi.github.io")
+    url = uri("https://tototoshi.github.io")
   )
 )
 
