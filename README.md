@@ -1,6 +1,6 @@
 # sbt-slick-codegen
 
-[![Continuous Integration](https://github.com/tototoshi/sbt-slick-codegen/actions/workflows/ci.yml/badge.svg)](https://github.com/tototoshi/sbt-slick-codegen/actions/workflows/ci.yml)
+[![Continuous Integration](https://github.com/sbt/sbt-slick-codegen/actions/workflows/ci.yml/badge.svg)](https://github.com/sbt/sbt-slick-codegen/actions/workflows/ci.yml)
 
 slick-codegen compile hook for sbt
 
