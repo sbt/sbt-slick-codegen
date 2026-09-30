@@ -1,7 +1,7 @@
 import scala.jdk.CollectionConverters._
 import java.lang.management.ManagementFactory
 
-lazy val scala212 = "2.12.21"
+lazy val scala212 = "2.13.18"
 lazy val scala3 = "3.9.0"
 
 ThisBuild / scalaVersion := scala212
