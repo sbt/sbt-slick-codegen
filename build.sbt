@@ -16,12 +16,12 @@ sbtPlugin := true
 
 name := """sbt-slick-codegen"""
 
-crossSbtVersions := Seq("1.12.9", "2.1.0-M3")
+crossSbtVersions := Seq("1.12.9", "2.1.0")
 
 pluginCrossBuild / sbtVersion := {
   scalaBinaryVersion.value match {
     case "2.12" => "1.12.9"
-    case _      => "2.1.0-M3"
+    case _      => "2.1.0"
   }
 }
 
@@ -96,3 +96,5 @@ scriptedLaunchOpts ++= Seq(
   "-Dplugin.version=" + version.value,
   "-Dslick.version=" + slickVersion.value
 )
+
+ThisBuild / githubWorkflowPublishJavaVersion := JavaSpec.temurin("17")
